@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <!--Pseudo-classes definem estados de elementos dentro da HTMl, Pseudos-elementos pode definir classes, elementos, id. mexem diretamente no conteúdo periférico do elemento-->
+    <style>
+        /* SLETORES PERSONALIZADOS
+            #   = id
+            .   = class
+            :   = pseudo-class
+            ::  = pseudo-element
+            >   = children "filho"
+        */
+        body {
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        a{ 
+            color: red;
+            text-decoration: none;
+            font-weight: boold;
+        }
+        a:visited {/*Visitado*/
+            color: darkred;
+        }
+        a:hover {/*Passar mouse*/
+            text-decoration: underline;
+            color: black;
+        }
+        a:active { /*Clicar*/
+            color: yellow;
+        }/*pseudo-elemento :: pseudo-classe :*/
+
+        .especial {
+            background-color: rgb(255, 140, 140);
+        }
+
+        .especial::before {
+            content: '→';
+            color: darkgray;
+        }
+        .especial::after { /*depois de todos links terá esse aviso "link"*/
+            content: '←';
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" class="especial">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

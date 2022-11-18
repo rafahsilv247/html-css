@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    body {
+        /*Web safe fonts, caso o navegador não suporte a fonte, tentara na proxima fonte , sans-serif ele ira colocar qualquer fonte que o navegador suporte "sem serifa" e "serif" com serifa*/
+        font-family: 'Work Sans', Arial, Verdana sans-serif;
+        font-size: 1em;
+        /* Medidas Absolutas
+        cm, mm, in, px, pt, pc
+        cm(centímetro), mm(milímetro), in(polegada), px (pixels), pt (ponto), pc(paica)
+
+        em, ex, rem, vw, vh, %
+        Medidas Relativas
+        em (Medida relativa ao tamanho atual "m de m maiuscúlo de uma fonte"), ex (relativo a altura x), rem(relativo ao principal da fonte configuradano body), vw(relativo a largura da viewport), vh( altura da viewport)
+        Recomenda-se usaar em e px
+        */
+        /*16px geralmante equivale a 1em*/
+
+        /*Weight= Peso: *Valores+ "lighter, normal, bold, bolder" númerica ex:400|
+         width= Largura | height= Altura*/
+    }
+
+    h1 {
+        /*Shorthand font declarar mais de um atributo em uma linha, seguindo esta ordem!
+        -font-style -> font-weight -> font-size -> font-family */
+        font: italic bolder 3em 'Wors Sans', sans-serif;
+    }
+    h2 {
+        font: bold 2em 'Work Sans', sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ea assumenda, veniam dolor officiis non pariatur sapiente provident ipsum laudantium, accusamus possimus voluptatibus magni iste a dolore natus quae obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nobis tempora quas impedit in officiis facere velit odit, modi aliquam a exercitationem culpa totam minus? Molestiae obcaecati dolore itaque ut!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro ad fugiat quidem impedit at atque possimus exercitationem quibusdam quo mollitia accusamus eveniet, doloribus excepturi vitae nulla aspernatur dolor modi voluptatum.</p>
+    <h2>Subítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a quasi molestiae debitis fugit, repellat itaque magni odio vitae quae similique totam sed soluta dolores tempora alias eveniet, tempore culpa.</p>
+</body>
+</html>

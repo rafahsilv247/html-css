@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Idroid Font;
+    src: url(../fontes/idroid.otf) format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1#principal{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+header {
+    background-image: linear-gradient(to top, black 70%, rgb(1, 157, 1));
+    background-attachment: fixed;
+    height: 150px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: rgb(49, 234, 49);
+    background-color: rgb(0, 56, 0);
+    margin-left: 10px;
+}
+nav > a:hover {
+    background-color: rgb(15, 127, 15);
+}
+
+header > p{
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-color: yellowgreen;
+    margin: 0px;
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    width: 800px;
+    margin: auto;
+}
+
+h2 {
+    font-family: 'Idroid Font';
+    margin: 0px;
+}
+
+p {
+    color: black;
+    text-indent: 10px;
+    text-align: justify;
+}
+@media(min-width: 425px) {
+    p {
+        font-size: 25;
+    }
+}
+
+span {
+    background-color: rgb(9, 182, 9);
+    color: black
+}
+img {
+    margin: auto; 
+}
+
+iframe {
+    border: solid 15px green;
+    margin: 0;
+}
+
+.destaque {
+    background-color: rgb(3, 176, 3);
+}
+
+div#aprendamais {
+    border-radius: 30px;
+    display: inline-block;
+    background-color: rgba(62, 255, 95, 0.996);
+}

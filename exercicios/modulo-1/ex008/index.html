@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formatação de Textos</title>
+    <style>
+        mark {
+            background-color: #0e97d6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase, temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (não semântica).</p>
+    <!--Semântica no html = significado / css = forma estilos etc-->
+    <!--Na frase acima não é semâtica, pois a tag <b> na formatação não tem um significado apenas forma-->
+    <p>Nesta frase, temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semântica).</p>
+    <!--Já nesta frase há semântica, pois a tag <strong> além de dar forma a fromatação traz significado "strong = ele é forte é de destaque"-->
+    <h2>Italíco / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em italíco</i> usando a tag &lt;i&gt; (não semântica).</p>
+    <!--O termo em italíco não tem significado somente forma, -->
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica).</p>
+    <!--O termo em ênfase tem significado e forma-->
+    <h2>Texto Marcado</h2>
+    <!--"<style> declara codigos em css, pode ser usado de forma externa atraves da tag link, dentro da html  em <head> e/ou dnetro de uma tag como neste exemplo <mark style="background-color: #06d154;">exemplo de texto marcado</mark>-->
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag &lt;mark&gt;</p>
+    <p>E no outro parágrafo temos <mark>outro texto marcado no texto</mark></p>
+    <h2>Texto grande e pequeno</h2>
+    <!--A tag <big> é obsoleta, pois é considerada forma a qual o html não atua mais e sim a css. Já a tag <small> tem semântica a qual faz parte da html e é usada em contratos "leia as letras pequenas"-->
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo.</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+    <p>Existe também o <u>sublinhado</u> com a tag &lt;u&gt; (não semântica).</p>
+    <h2>Texto sobreescrito</h2>
+    <p>Para  inserir coisas do tipo x<sup>20</sup>+3</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+</body>
+</html>

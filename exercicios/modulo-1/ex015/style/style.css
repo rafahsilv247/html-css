@@ -1,0 +1,29 @@
+@charset "utf-8";
+/*A codificação da css será em utf-8*/
+
+body {
+    background-color: lightgoldenrodyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h1 {
+    color: maroon;
+    font-size: 1.5em;
+    background-color: goldenrod;
+}
+h2 {
+    color: darkred;
+    font-size: 1.2em;
+}
+p {
+    text-align: justify;
+}
+a:link { /* Link não acessado*/
+    color: white;
+}
+a:visited { /* Link ja acessado*/
+    color: maroon;
+}
+a:hover { /*Link ao passar o mouse */
+    color: goldenrod;
+}
